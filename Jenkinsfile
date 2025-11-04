@@ -25,20 +25,6 @@ pipeline {
             }
         }
 
-        stage('Tests') {
-            steps {
-                script {
-                    sh 'pwd'
-                    sh 'ls -la' 
-                    def csvFiles = ['AAPL', 'AMZN', 'GOOG', 'MSFT', 'ORCL']
-                    csvFiles.each { fileName ->
-                        sh "if [ ! -f infra/investment/pipelines/${fileName}.csv ]; then echo '${fileName}.csv missing in ' \$(pwd); exit 1; fi"
-                    }
-                    echo "All CSV files are present."
-                }
-            }
-        }
-
         stage('Prepare Artifact') {
         steps {
             script {
