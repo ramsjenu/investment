@@ -9,7 +9,7 @@ pipeline {
         MINIO_ACCESS_KEY =  'admin'
         MINIO_SECRET_KEY = 'password'
         MINIO_CREDENTIALS = 'minio'
-        FEATURE_BRANCH = 'feature/01/buildRacineProject'
+        FEATURE_BRANCH = 'main'
     }
 
     stages {
