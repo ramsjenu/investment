@@ -21,7 +21,7 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git(credentialsId: GIT_CREDENTIALS, url: GIT_REPO_URL, branch: FEATURE_BRANCH)
+                git(default)
             }
         }
 
