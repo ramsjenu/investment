@@ -7,7 +7,7 @@ pipeline {
         MINIO_ALIAS = 'minio'
         MINIO_URL = 'http://minio:9000'
         MINIO_CREDENTIALS = 'minio'
-        FEATURE_BRANCH = 'feature/01/buildRacineProject'
+        FEATURE_BRANCH = 'main'
     }
 
     stages {
