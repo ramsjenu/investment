@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO_URL = 'https://github.com/Stefen-Taime/investissement.git'
+        GIT_REPO_URL = 'https://github.com/ramsjenu/investment.git'
         GIT_CREDENTIALS = 'ops'
         MINIO_ALIAS = 'minio'
         MINIO_URL = 'http://minio:9000'
