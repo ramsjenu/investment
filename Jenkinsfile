@@ -21,7 +21,7 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git(url: 'https://github.com/ramsjenu/investment.git')
+                git branch: 'main', url: 'https://github.com/ramsjenu/investment.git'
             }
         }
 
